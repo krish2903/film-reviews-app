@@ -1,5 +1,8 @@
 ## Overview
 This project is a film reviews app where users can browse movies, view details, and submit reviews. The frontend is built with React and communicates with a Django REST framework backend. Users can sign up, log in, and manage their reviews through the application.
+
+![image](https://github.com/user-attachments/assets/27ab3a83-b0e6-415e-9aad-fcd3dcaa3334)
+
 ![image](https://github.com/user-attachments/assets/00fcb531-6227-47f9-9d50-f3be30d1b69b)
 
 ## Frontend Setup (available at http://localhost:3000)
