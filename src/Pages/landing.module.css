@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body {
+    background-color: #020d18;
+    color: #ffffff;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+}
+
+::-webkit-scrollbar {
+    width: 12px; 
+    height: 12px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #020d18;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #405266;
+    border-radius: 10px;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+
+    100% {
+        opacity: 0.9;
+        transform: translateY(0);
+    }
+}
+
+.heading {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+    padding-left: 25rem;
+    padding-right: 25rem;
+    overflow: hidden;
+}
+
+.heading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/bg-cover.png");
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(0.75) opacity(0.1);
+    z-index: -1;
+}
+
+.heading .title {
+    animation: slideDown 3s ease-in-out;
+    width: 100%;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.heading .title span {
+    color: #DCF836;
+}
+
+.searchBar {
+    display: flex;
+    opacity: 0.9;
+    width: 100%;
+    animation: slideDown 3s ease-in-out;
+    border-bottom: 2pt solid white;
+}
+
+.searchBar input {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    padding-bottom: 10px;
+    text-align: left;
+    color: white;
+}
+
+.searchBar input::placeholder {
+    color: rgba(255, 255, 255, 0.477);
+}
+
+.searchBar svg {
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+.searchBar svg:hover {
+    transform: rotate(90deg) scale(150%);
+    fill: #DCF836;
+    transition: all 0.5s ease-in-out;
+}
+
+.searchBar svg:active {
+    transform: rotate(90deg) scale(150%) translateX(5px);
+    transition: 100ms;
+}
+
+.movieGrid {
+    margin-top: 30px;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}

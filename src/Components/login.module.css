@@ -1,0 +1,96 @@
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 997;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s all ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.loginContainer {
+    width: 35%;
+    height: 85vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    z-index: 998;
+    animation: fadeIn 0.5s ease-in-out;
+    transition: 0.5s all ease-in-out;
+}
+
+.loginContainer h1, .loginContainer p, .loginContainer button {
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1e1e1e;
+    padding: 0;
+    margin: 0;
+}
+
+.loginContainer p {
+    font-size: 11pt;
+    width: 65%;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.loginContainer input {
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    font-size: 10pt;
+    letter-spacing: 1px;
+    width: 65%;
+    height: 40px;
+    border: 1pt solid #e1e1e1;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.loginContainer input:focus {
+    border: 1pt solid #dd003f;
+    outline: none;
+}
+
+.loginContainer button {
+    width: 67%;
+    height: 45px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dd003f;
+    font-size: 11pt;
+    color: white;
+    cursor: pointer;
+}
+
+.loginContainer .closeButton {
+    fill: #1e1e1e;
+    position: absolute;
+    top: calc(7.5vh + 20px);
+    right: calc(32.5% + 20px);
+    z-index: 999;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+
+.loginContainer .closeButton:hover {
+    fill: #dd003f;
+}

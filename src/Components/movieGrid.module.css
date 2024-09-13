@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap');
+
+.filterBar {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 10%;
+    border: 1px solid #405266;
+    border-left: none;
+}
+
+.filterBar p span {
+    height: 100%;
+    color: rgb(139, 180, 224);
+}
+
+.filterBar label p,
+.filterBar select {
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 100%;
+    color: #abb7c4;
+    font-weight: 300;
+    text-transform: none;
+    text-align: center;
+}
+
+.filterBar select {
+    width: 250px;
+    -webkit-appearance: none;
+    background: url('./images/drop-icon.png') no-repeat right 25px center;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: none;
+    border-left: 1px solid #405266;
+    border-right: 1px solid #405266;
+    color: #ffffff;
+    outline: none;
+}
+
+.filterBar select option {
+    background-color: #020d18;
+}
+
+.movieGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+}
+
+.movieGrid p {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.movieGrid img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.movieItem {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.movieItem .movieTitle {
+    font-family: "Dosis", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.movieItem:hover {
+    transform: scale(103%);
+    transition: 0.5s ease-in-out;
+}
+
+.movieItem:hover .movieTitle {
+    color: #DCF836;
+    transition: 1s ease-in-out;
+}
+
+.review {
+    display: flex;
+    gap: 3px;
+    align-items: end;
+    margin-top: 5px;
+}
+
+.review p {
+    font-size: 16px;
+}
+
+.review p span {
+    color: #abb7c4;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.movieItem .movieImg {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.movieItem .movieImg .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.movieItem:hover .movieImg .overlay {
+    opacity: 1;
+}
+
+.movieItem .movieImg .moreInfoButton {
+    text-decoration: none;
+    background-color: #dd003f;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.75s ease-in-out;
+}
+
+.movieItem .movieImg .moreInfoButton p {
+    color: white;
+}
+
+.movieItem .movieImg .moreInfoButton:active {
+    transform: translateY(10px);
+    transition: 0.1s ease-in-out;
+}

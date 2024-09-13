@@ -1,0 +1,23 @@
+
+.footerContainer {
+    margin-top: 50px;
+    position: relative;
+    padding: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    overflow: hidden;
+}
+
+.footerContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/footerBg.png");
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(0.5) opacity(0.1);
+    z-index: -1;
+}

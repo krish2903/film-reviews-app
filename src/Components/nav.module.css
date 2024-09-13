@@ -1,0 +1,85 @@
+.navbar * {
+    padding: 0;
+}
+
+.navbar {
+    background-color: #020d18;
+    box-shadow: 0 0 30px -10px red;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.navContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10rem;    
+    margin-right: 10rem;
+}
+
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.navElement {
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s, top 0.5s;
+}
+
+.navElement:hover .navLink p {
+    color: #DCF836;
+    transition: 0.75s ease-in-out;
+}
+
+.navElement button {
+    width: 100px;
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navElement #loginButton {
+    background-color: #6500d7;
+}
+
+.navElement #signinButton, .navElement #logoutButton {
+    background-color: #dd003f;
+}
+
+.navElement #loginButton:hover {
+    background-color: #5100ad;
+}
+
+.navElement #signinButton:hover, .navElement #logoutButton:hover {
+    background-color: #a1002e;
+}
+
+.navLink {
+    text-decoration: none;
+}
+
+.navLink p {
+    text-transform: uppercase;
+    color: #abb7c4;
+    font-size: 14px;
+    transition: 0.75s ease-in-out;
+}

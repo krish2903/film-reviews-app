@@ -1,0 +1,117 @@
+
+.movieContainer {
+    position: relative;
+    padding-top: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.movieContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-image: url("./images/bg-cover.png");
+    background-size: cover;
+    background-position: center;
+    filter: opacity(0.2) brightness(0.5);
+    z-index: -1;
+}
+
+.imgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1pt solid #0c1c2c;
+    border-radius: 10px;
+}
+
+.movieContainer .imgContainer img {
+    height: 65vh;
+    border-radius: 8px;
+}
+
+.movieContainer .imgContainer button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dd003f;
+    color: white;
+    gap: 5px;
+    border: none;
+    outline: none;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+.movieContainer .imgContainer button:hover  {
+    background-color: #6500d7;
+    transition: 1s ease-in-out;
+}
+
+.detailsContainer .descContainer {
+    height: 45%;
+}
+
+.descContainer .ratingContainer {
+    display: flex;
+    align-items: end;
+    gap: 20px;
+}
+
+.descContainer .ratingContainer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.descContainer .ratingContainer p span {
+    color: #abb7c4;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.descContainer .ratingContainer p b {
+    font-weight: 700;
+    color: rgb(139, 180, 224);
+}
+
+.detailsContainer h1,.detailsContainer h2 {
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+.detailsContainer h1 {
+    font-size: 36pt;
+    margin-bottom: 15px;
+}
+
+.detailsContainer h2 {
+    font-size: 13pt;
+    letter-spacing: 1px;
+    width: 100%;
+    border-bottom: 1.5pt solid #0c1c2c;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: #abb7c4;
+}
+
+.detailsContainer p {
+    font-size: 12pt;
+    letter-spacing: 1px;
+}
