@@ -7,28 +7,29 @@ This project is a film reviews app where users can browse movies, view details, 
 
 ## Frontend Setup (available at http://localhost:3000)
 ### 1) Clone and Navigate To The Repository
-`git clone https://github.com/krish2903/film-reviews-app.git`
-
+```
+git clone https://github.com/krish2903/film-reviews-app.git
 cd film-reviews-app/frontend
+```
 ### 2) Install Necessary Dependencies (ensure you have Node.js installed)
-npm install
+`npm install`
 ### 3) Run The Development Server
-npm start
+`npm start`
 
 ## Backend Setup (available at http://localhost:8000)
 ### 1) Navigate to the Backend Directory
-cd ../backend
+`cd ../backend`
 ### 2) Create a Virtual Environment 
+```
 python -m venv myenv
-
 source myenv/bin/activate  (On Windows use: myenv\Scripts\activate) - this is to activate the virtual environment
+```
 ### 3) Install Dependencies
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 ### 4) Run the Server (after making migrations)
+```
 python manage.py makemigrations
-
 python manage.py migrate
-
 python manage.py runserver
-
+```
 
