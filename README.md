@@ -7,7 +7,7 @@ This project is a film reviews app where users can browse movies, view details, 
 
 ## Frontend Setup (available at http://localhost:3000)
 ### 1) Clone and Navigate To The Repository
-git clone https://github.com/krish2903/film-reviews-app.git
+`git clone https://github.com/krish2903/film-reviews-app.git`
 
 cd film-reviews-app/frontend
 ### 2) Install Necessary Dependencies (ensure you have Node.js installed)
