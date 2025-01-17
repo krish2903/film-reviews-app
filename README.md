@@ -19,7 +19,7 @@ cd film-reviews-app/frontend
 ## Backend Setup (available at http://localhost:8000)
 ### 1) Navigate to the Backend Directory
 `cd ../backend`
-### 2) Create a Virtual Environment 
+### 2) Create & Activate a Virtual Environment 
 ```
 python -m venv myenv
 source myenv/bin/activate  (On Windows use: myenv\Scripts\activate) - this is to activate the virtual environment
@@ -28,6 +28,7 @@ source myenv/bin/activate  (On Windows use: myenv\Scripts\activate) - this is to
 `pip install -r requirements.txt`
 ### 4) Run the Server (after making migrations)
 ```
+cd filmReviewsBackend
 python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
